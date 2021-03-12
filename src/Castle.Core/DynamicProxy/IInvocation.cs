@@ -23,13 +23,13 @@ namespace Castle.DynamicProxy
 	public interface IInvocation
 	{
 		/// <summary>
-		///   Gets the arguments that the <see cref = "Method" /> has been invoked with.
+		///  拦截的方法的参数
 		/// </summary>
 		/// <value>The arguments the method was invoked with.</value>
 		object[] Arguments { get; }
 
 		/// <summary>
-		///   Gets the generic arguments of the method.
+		///  泛型参数
 		/// </summary>
 		/// <value>The generic arguments, or null if not a generic method.</value>
 		Type[] GenericArguments { get; }
@@ -43,7 +43,7 @@ namespace Castle.DynamicProxy
 		object InvocationTarget { get; }
 
 		/// <summary>
-		///   Gets the <see cref = "MethodInfo" /> representing the method being invoked on the proxy.
+		///  拦截的方法
 		/// </summary>
 		/// <value>The <see cref = "MethodInfo" /> representing the method being invoked.</value>
 		MethodInfo Method { get; }
@@ -61,7 +61,7 @@ namespace Castle.DynamicProxy
 		object Proxy { get; }
 
 		/// <summary>
-		///   Gets or sets the return value of the method.
+		///   返回值
 		/// </summary>
 		/// <value>The return value of the method.</value>
 		object ReturnValue { get; set; }

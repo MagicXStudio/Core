@@ -26,7 +26,7 @@ namespace Castle.DynamicProxy
 	using Castle.DynamicProxy.Generators;
 
 	/// <summary>
-	///   Provides proxy objects for classes and interfaces.
+	///   代理类生成器
 	/// </summary>
 	[CLSCompliant(true)]
 	public class ProxyGenerator : IProxyGenerator
